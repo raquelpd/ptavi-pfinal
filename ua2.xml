@@ -1,0 +1,8 @@
+<config>
+   <account username="ISAM@fuenlabrada.com" passwd="urjc"/>
+   <uaserver ip="127.0.0.1" port= "4646" />
+   <rtpaudio port="9001"/>
+   <regproxy ip="127.0.0.1" port="6001" />
+   <log path="log2.txt"/>
+   <audio path="cancion.mp3"/>
+</config>
