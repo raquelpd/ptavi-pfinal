@@ -1,0 +1,5 @@
+<config>
+    <server name="MiServidor" ip="127.0.0.1" port="6001"/>
+    <database path="database.txt" passwdpath="passwords.txt"/>
+    <log path="log_prox.txt"/>
+</config>
