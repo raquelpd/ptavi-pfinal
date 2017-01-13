@@ -141,7 +141,7 @@ try:
                 # IP1 = LINEA[4].split(' ')[1]
                 if cod == '100' and I2 == '180' and I3 == '200':
                     # ack
-                    Line = 'ACK ' + 'sip:' + DirectionIP + ' SIP/2.0\r\n'
+                    Line = 'ACK ' + 'sip:' + DirectionIP + ' SIP/2.0\r\n\r\n'
                     print('\r\nSending: ' + Line)
                     my_socket.send(bytes(Line, 'utf-8') + b'\r\n')
                     # log
