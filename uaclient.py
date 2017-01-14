@@ -151,7 +151,7 @@ try:
                     Log = open(LOGpath, 'a')
                     Log.write(Hora + " " + Evento)
                     # Envio del audio
-                    aEjecutar = 'mp32rtp -i' + IPserver + ' -p' + str(PORTrtp) + ' <' + str(AUDIOpath)
+                    aEjecutar = './mp32rtp -i' + IPserver + ' -p' + str(PORTrtp) + ' <' + str(AUDIOpath)
                     os.system(aEjecutar)
                     print('Succesfully sent')
                     # log
