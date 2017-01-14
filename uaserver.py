@@ -89,7 +89,7 @@ class EchoHandler(socketserver.DatagramRequestHandler):
                 Hora = time.strftime('%Y-%m-%d %H:%M:%S', now)
                 Log = open(LOGpath, 'a')
                 Log.write(str(Hora) + " " + Evento)
-                aEjecutar = 'mp32rtp -i ' + IPserver + ' -p ' + str(PORTrtp) + ' < ' + str(AUDIOpath)
+                aEjecutar = './mp32rtp -i ' + IPserver + ' -p ' + str(PORTrtp) + ' < ' + str(AUDIOpath)
                 print("Executing... ", aEjecutar)
                 os.system(aEjecutar)
                 print("Successfully sent")
